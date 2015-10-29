@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lockimage"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/locktime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textSize="70sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+    
+    <TextView
+        android:id="@+id/lockcontent"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/locktime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+    
+    <ImageView
+        android:id="@+id/unlock"
+        android:src="@drawable/phonein"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="50dp"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/phonein"
+        ></ImageView>
+</RelativeLayout>

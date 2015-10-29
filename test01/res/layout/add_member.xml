@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/fname"
+        android:text="@string/fname"
+        android:textSize="15sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+		android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+    </TextView>
+    
+    <AutoCompleteTextView
+        android:id="@+id/textname"
+        android:hint="@string/tips"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="85dp"
+        android:completionThreshold="1"
+        android:layout_alignTop="@+id/fname"
+        >
+        
+    </AutoCompleteTextView>
+    
+    <ImageView
+        android:id="@+id/newcontacts"
+        android:layout_toRightOf="@+id/textname"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/addbtn"
+        android:layout_alignBottom="@+id/textname"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/newcontacts"
+        ></ImageView>
+    
+    <TextView
+        android:id="@+id/datetime"
+        android:text="@string/datetime"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/textname"
+        >
+        
+    </TextView>
+    
+    <EditText
+        android:id="@+id/dtpicker"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="85dp"
+        android:layout_alignTop="@+id/datetime"
+        >
+        
+    </EditText>
+    
+    <Button
+        android:id="@+id/confirm"
+        android:text="@string/confim"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dtpicker"
+        android:background="@drawable/button_selector"
+        ></Button>"
+
+</RelativeLayout>
